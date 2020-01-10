@@ -1,0 +1,56 @@
+/* 侧边栏 */
+.slidebar{
+  width:40px;
+  height:200px;
+  position:fixed;
+  bottom:60px;
+  right:57.5px;
+  display:none;
+  /* background:#aaa; */
+}
+.slidebar.active{
+  display:block;
+}
+.slidebar>div{
+  height:40px;
+  background:#aaa;
+  cursor:pointer;
+}
+.slidebar>div>em{
+  width:40px;
+  height:40px;
+  background:url(../img/slidebar/sprite_toolbar_new.png) no-repeat;
+}
+.slidebar>.shop-car>em{
+  background-position:0 -40px;
+}
+.slidebar>.lxkf>em{
+  background-position:0 -160px;
+}
+.slidebar>.mobile>em{
+  background-position:0 -240px;
+}
+.slidebar>.to-top>em{
+  background-position:0 -280px;
+}
+.slidebar>div>em:nth-child(2){
+  width:80px;
+  height:40px;
+  color:#fff;
+  background:#aaa;
+  line-height:40px;
+  text-align:center;
+  font-style:normal;
+  top:0px;
+  right:40px;
+  display:none;
+}
+.slidebar>div:hover{
+  background:#000;
+  opacity:.7;
+}
+.slidebar>div:hover>em:nth-child(2){
+  display:block;
+  background:#000;
+  opacity:.7;
+}

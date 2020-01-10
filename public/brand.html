@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SEPHORA丝芙兰官网</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/head.css">
+  <link rel="stylesheet" href="css/foot.css">
+  <link rel="stylesheet" href="css/slidebar.css">
+  <style>
+    /* 顶部面包屑导航 */
+    .product-box>.bread-nav{
+      height:62px;
+    }
+    .product-box>.bread-nav>.center-box>div{
+      line-height: 62px;
+    }
+    .product-box>.bread-nav>.center-box>.bread-nav-left>.arrow{
+      width:26px;
+      text-align:center;
+    }
+    .product-box>.bread-nav>.center-box>.bread-nav-right>span{
+      color:#666;
+    }
+    .product-box>.bread-nav>.center-box>.bread-nav-right>span>span{
+      font-weight: 600;
+    }
+
+    /* 品牌长图片 */
+    .brand-container{
+      height:190px;
+    }
+    .brand-container>.center-box{
+      background: lightcoral;
+    }
+    .bc-left{
+      background:lightcyan;
+    }
+    .bc-right{
+      background:lightgoldenrodyellow
+    }
+  </style>
+</head>
+<body>
+  <!-- 头部 -->
+  <header id="header"></header>
+
+  <!-- 内容部分 -->
+  <div class="product-box">
+    <!-- 面包屑导航 -->
+    <div class="bread-nav">
+      <div class="center-box d-flex justify-between">
+        <!-- 左侧部分 -->
+        <div class="bread-nav-left">
+          <a class="text-black" href="javascript:;">首页</a>
+          <span class="d-inline-block arrow">></span>
+          <a class="text-black" href="javascript:;">化妆品品牌大全</a>
+          <span class="d-inline-block arrow">></span>
+          <a class="text-black" href="javascript:;">DIOR</a>
+        </div>
+        <!-- 右侧部分 -->
+        <div class="bread-nav-right">
+          <span>共<span>179</span>件商品</span>
+        </div>
+      </div>
+    </div>
+    <!-- 品牌长图片 -->
+    <div class="brand-container">
+      <div class="center-box d-flex justify-between">
+        <div class="bc-left"></div>
+        <div class="bc-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer id="footer"></footer>
+  <!-- 侧边栏 -->
+  <div id="slidebar"></div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common_not_index.js"></script>
+</html>

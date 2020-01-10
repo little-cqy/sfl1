@@ -1,0 +1,98 @@
+/* 底部 */
+.footer{
+  width:100%;
+  background:#fff;
+  margin-top:80px;
+}
+.footer .footer-info-content{
+  /* margin:30px 0; */
+  width:236px;
+  height:96px;
+  box-sizing:content-box;
+  padding:30px 0;
+  background:#fff;
+  text-align:center;
+}
+.footer .info-split{
+  width:1px;
+  height:24px;
+  background:#9d9d9d;
+  margin-top:66px;
+}
+.footer .footer-info-content>p{
+  width:49px;
+  height:49px;
+  margin:auto;
+  background:url(../img/footer/footer_ico_sprite.png) no-repeat;
+}
+.footer .footer-info-content>p.content-1{
+  background-position:-137px 0;
+}
+.footer .footer-info-content>p.content-2{
+  background-position:-90px 0;
+}
+.footer .footer-info-content>p.content-3{
+  background-position:0 0;
+}
+.footer .footer-info-content>p.content-4{
+  background-position:-180px 0;
+}
+.footer .footer-info-content>p.content-5{
+  width:45px;
+  background-position:-47px 0;
+}
+.footer .footer-info-content>span{
+  font-weight:700;
+  line-height:18px;
+  margin-top:14px;
+}
+
+.footer .center-box>.footer-map>ul{
+  width:100%;
+  border-top:2px solid #000;
+  padding:30px 0 50px 0;
+  box-sizing:content-box;
+}
+.footer .center-box>.footer-map>ul>li{
+  width:190px;
+}
+.footer .center-box>.footer-map>ul>li>a{
+  height:26px;
+  line-height:26px;
+}
+.footer .center-box>.footer-map>ul>li>.header{
+  font-weight:bolder;
+  margin-bottom:10px;
+}
+.footer .center-box>.footer-map>ul>li>a:not(.header){
+  color:#696969;
+}
+.footer>.footer-declaration{
+  width:100%;
+  box-sizing:content-box;
+  padding:30px 0;    
+  background:#000;
+}
+.footer>.footer-declaration>.center-box>div{
+  text-align:center;
+}
+.footer>.footer-declaration a{
+  font-weight:400;
+  font-size:14px;
+  line-height:21px;
+  margin:0 22px;
+  color:#6f6f6f;
+}
+.footer>.footer-declaration a.gaj{
+  background:url(../img/footer/footer-redords-icon.png) no-repeat;
+  padding-left:30px;
+}
+.footer>.footer-declaration .special>a{
+  font-size:12px;
+}
+.footer>.footer-declaration .special>a:first-child{
+  margin-right:0;
+}
+.footer>.footer-declaration .special a.special{
+  margin:0 !important;
+}

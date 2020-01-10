@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SEPHORA丝芙兰官网－国际化妆品购物网站!</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    /* 顶部 */
+    .login-top{
+      width:100%;
+      height:89px;
+    }
+    .login-top>.center-box{
+      margin:auto;
+    }
+    .login-top>.center-box:before{
+      content:'';
+      display:table;
+    }
+    .login-top>.center-box>a{
+      margin-top:28px;
+    }
+
+    /* 中间部分 */
+    .login-center{
+      height:610px;
+      background:url(img/login/login_bg.jpg) 50% 0;
+    }
+    .login-center>.center-box:before{
+      content:'';
+      display:table;
+    }
+    .login-center>.center-box>.main-middle:before{
+      content:'';
+      display:table;
+    }
+    .login-center>.center-box>.main-middle{
+      width:360px;
+      height:380px;
+      background:#fff;
+      margin:115px 0 0 800px;
+      padding:0 30px;
+    }
+    .login-center>.center-box>.main-middle>.main-title{
+      font-size:16px;
+      letter-spacing:1px;
+      margin-top:26px;
+    }
+    .login-center>.center-box>.main-middle>.input-box{
+      margin-top:32px;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>input{
+      width:298px;
+      height:30px;
+      outline:none;
+      text-indent:32px;
+      border:1px solid #ccc;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>input:hover{
+      border-bottom:1px solid #000;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>input:focus{
+      border-bottom:1px solid #000;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div.pass{
+      margin-top:20px;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>em{
+      width:20px;
+      height:20px;
+      /* margin:6px 0 0 7px; */
+      top:6px;
+      left:7px;
+      background:url(img/login/LoginIn-icon.png) 0 -20px;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div.pass>em{
+      background-position:0 0;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>span.clear-btn{
+      width:18px;
+      height:18px;
+      right:10px;
+      top:6px;
+      background:url(img/login/LoginIn-icon.png) -20px -18px;
+      display:none;
+    }
+    .login-center>.center-box>.main-middle>.input-box>div>span.clear-btn.focus{
+      display:block;
+    }
+    .login-center>.center-box>.main-middle>.forget-pass{
+      /* margin-top:20px; */
+      color:#919191;
+      line-height:50px;
+    }
+    .login-center>.center-box>.main-middle>.forget-pass:hover{
+      color:#e00;
+    }
+    .login-center>.center-box>.main-middle>.confirm-btn{
+      height:40px;
+      background:#999;
+      font-size:16px;
+      line-height:40px;
+      text-align: center;
+      color:#fff;
+      letter-spacing:2px;
+    }
+    .login-center>.center-box>.main-middle>.read>label{
+      font-size:10px;
+      color:#919191;
+    }
+    .login-center>.center-box>.main-middle>.read>label>span{
+      color:#000;
+    }
+    .login-center>.center-box>.main-middle>.read{
+      margin-top:5px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin{
+      width:100px;
+      height:50px;
+      padding-top:13px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a{
+      width:24px;
+      height:24px;
+      background:url(img/login/LoginIn-icon.png);
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.weixin{
+      background-position:-56px 0;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.weixin:hover{
+      background-position:-80px 0;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.qq{
+      background-position:-56px -24px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.qq:hover{
+      background-position:-80px -24px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.zhifubao{
+      background-position:-56px -48px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.mixedLogin>a.zhifubao:hover{
+      background-position:-80px -48px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.register{
+      color:#919191;
+      line-height:50px;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.register a{
+      color:#f12526;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.register a:hover{
+      text-decoration:underline;
+    }
+    .login-center>.center-box>.main-middle>.freeRegister>.register>p>a>span{
+      width:4px;
+      height:8px;
+      background:url(img/login/LoginIn-icon.png) -52px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部 -->
+  <div class="login-top">
+    <div class="center-box">
+      <a class="d-block" href="/">
+        <img src="img/header/sep_top_Logo.png" alt="">
+      </a>
+    </div>
+  </div>
+  <!-- 中间部分 -->
+  <div class="login-center">
+    <div class="center-box">
+      <div class="main-middle">
+        <div class="main-title">登录丝芙兰官网</div>
+        <div class="input-box">
+          <div class="user p-relative">
+            <em class="d-inline-block p-absolute"></em>
+            <input type="text" placeholder="手机号/邮箱">
+            <span class="d-inline-block p-absolute clear-btn"></span>
+          </div>
+          <div class="pass p-relative">
+            <em class="d-inline-block p-absolute"></em>
+            <input type="password" placeholder="密码">
+            <span class="d-inline-block p-absolute clear-btn"></span>
+          </div>
+        </div>
+        <a class="forget-pass" href="javascript:;">忘记密码?</a>
+        <a class="d-block confirm-btn" href="javascript:;">登录</a>
+        <div class="read">
+          <input id="read" type="checkbox"><label for="read">
+            已阅读<span>《丝芙兰用户服务协议》</span>和<span>《丝芙兰隐私政策》</span>
+          </label>
+        </div>
+        <div class="freeRegister d-flex justify-between">
+          <div class="mixedLogin">
+            <a class="d-inline-block weixin" href="javascript:;"></a>
+            <a class="d-inline-block qq" href="javascript:;"></a>
+            <a class="d-inline-block zhifubao" href="javascript:;"></a>
+          </div>
+          <div class="register">
+            <p>
+              还没有账号？
+              <a href="register.html">
+                免费注册
+                <span class="d-inline-block"></span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</html>

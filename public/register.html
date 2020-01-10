@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SEPHORA丝芙兰官网－国际化妆品购物网站!</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .reg-header{
+      width:100%;
+      height:89px;
+    }
+    .header-logo{
+      padding-top:28px;
+    }
+    .reg-header>.center-box>.header-left>.hello{
+      font-size:16px;
+      color:#333;
+      letter-spacing:3px;
+      margin-left:30px;
+    }
+    .reg-header>.center-box>.header-right{
+      margin-top:30px;
+    }
+    .reg-header>.center-box>.header-right>.have{
+      color:#9d9d9d;
+    }
+    .reg-header>.center-box>.header-right>.login:hover>a{
+      color:red;
+      text-decoration:underline;
+    }
+    .reg-header>.center-box>.header-right>.login:hover+span.arrow{
+      border-left:5px solid red;
+    }
+    .reg-header>.center-box>.header-right>.arrow{
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 5px solid #000;
+      border-bottom: 4px solid transparent;
+    }
+
+    /* 内容部分 */
+    .reg-body{
+      height:804px;
+      background:url(img/register/register_Bg.jpg) no-repeat scroll 50% 0;
+    }
+    .reg-body>.center-box::before{
+      content:'';
+      display:table;
+    }
+    .reg-body>.center-box>.reg-box,.reg-body>.center-box>.email-reg-box{
+      width:730px;
+      margin-left:80px;
+      margin-top:64px;
+    }
+    .center-box .reg-title{
+      width:100px;
+      height:32px;
+      line-height:32px;
+      text-align:center;
+      font-size:14px;
+      margin-right:10px;
+    }
+    .center-box input:not([type=checkbox]){
+      width:298px;
+      height:30px;
+      outline:none;
+      border:1px solid #ccc;
+      text-indent:20px;
+      margin-right:10px;
+    }
+    .reg-box input:hover{
+      border-bottom:1px solid #000;
+    }
+    .reg-box input:focus{
+      border-bottom:1px solid #000;
+    }
+    .reg-box .verification-code{
+      width:120px;
+      height:32px;
+      top:11px;
+    }
+    .center-box .tips-icon{
+      width:18px;
+      height:18px;
+      background:url(img/login/LoginIn-icon.png);
+      right:15px;
+      top:6px;
+    }
+    .center-box .tip-icon{
+      width:14px;
+      height:14px;
+      background:url(img/login/LoginIn-icon.png) -38px -14px;
+      top:2px;
+    }
+    .center-box .no{
+      background-position:-20px -36px;
+    }
+    .center-box .ok{
+      background-position:-20px 0;
+    }
+    .reg-body .center-box .error-tip{
+      width:620px;
+      height:34px;
+      line-height:24px;
+      margin-left:114px;
+    }
+    .reg-box .phone>.get-code{
+      width:120px;
+      height:32px;
+      line-height:32px;
+      text-align:center;
+      background:#000;
+      font-size:14px;
+      transition:background .3s linear;
+    }
+    .reg-box .phone>.get-code.code-ok{
+      background:#000;
+    }
+    .reg-box .phone>.get-code.code-no{
+      background:#ccc;
+    }
+    .reg-box .phone>.get-code.code-red{
+      background:#E00;
+    }
+
+    /* 同意条款并注册 */
+    .reg-body .center-box .register-btn{
+      width:300px;
+      height:30px;
+      line-height:30px;
+      font-size:14px;
+      text-align:center;
+      letter-spacing:2px;
+      margin-left:114px;
+      background:#999;
+      transition:all .3s linear;
+    }
+    .ok-hover{
+      background:#e00 !important;
+    }
+    /* 已阅读注册协议 */
+    .readed{
+      margin-left:114px;
+    }
+    .readed>span{
+      line-height:30px;
+      color:#9d9d9d;
+    }
+    .readed>span>a:hover{
+      text-decoration: underline;
+      color:red;
+    }
+    /* 使用邮箱注册 */
+    .email-reg,.phone-reg{
+      width:410px;
+      text-align:right;
+    }
+    .email-reg>a,.phone-reg>a{
+      color:#9d9d9d;
+    }
+    .email-reg>a:hover,.phone-reg>a:hover{
+      color:red;
+      text-decoration:underline;
+    }
+    .email-reg>a:hover+span,.phone-reg>a:hover+span{
+      border-left:5px solid red;
+    }
+    .email-reg .arrow,.phone-reg .arrow{
+      width:0;
+      height:0;
+      border-top: 4px solid transparent;
+      border-left: 5px solid #9d9d9d;
+      border-bottom: 4px solid transparent;
+    }
+    .center-box .close-btn{
+      width:18px;
+      height:18px;
+      background:url(img/login/LoginIn-icon.png) -20px -18px;
+      right:15px;
+      top:6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 头部 -->
+  <div class="reg-header">
+    <div class="center-box d-flex justify-between">
+      <div class="header-left">
+        <div class="d-inline-block header-logo">
+          <img src="img/header/sep_top_Logo.png" alt="">
+        </div>
+        <span class="hello">欢迎注册</span>
+      </div>
+      <div class="header-right">
+        <span class="have">已有账号?</span>
+        <span class="login"><a class="text-black" href="login.html">立即登录</a></span>
+        <span class="arrow d-inline-block"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 内容部分 -->
+  <div class="reg-body">
+    <div class="p-relative center-box">
+      <!-- 手机注册部分 -->
+      <div class="p-absolute reg-box">
+        <!-- 图形验证码 -->
+        <div class="verification">
+          <span class="d-inline-block reg-title">图形验证码</span>
+          <div class="d-inline-block p-relative">
+            <input class="code-img" type="text">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <img class="verification-code p-relative" src="img/register/verification.jpeg" alt="">
+          <div class="error-tip"></div>
+        </div>
+        <!-- 手机号 -->
+        <div class="phone">
+          <span class="d-inline-block reg-title">手机号</span>
+          <div class="d-inline-block p-relative">
+            <input class="phoneReg" type="text" placeholder="请输入你的手机号">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+            <span class="d-none p-absolute d-inline-block tips-icon"></span>
+          </div>
+          <a class="text-white d-inline-block get-code code-no" href="javascript:;">获取验证码</a>
+          <div class="error-tip">
+            <div class="d-none box">
+              <span class="p-relative d-inline-block tip-icon"></span>
+              <span class="text-red tip-text">请填写手机号</span>
+            </div>
+          </div>
+        </div>
+        <!-- 短信验证码 -->
+        <div class="note">
+          <span class="d-inline-block reg-title">短信验证码</span>
+          <div class="p-relative d-inline-block">
+            <input type="text">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <div class="error-tip"></div>
+        </div>
+        <!-- 输入密码 -->
+        <div class="password">
+          <span class="d-inline-block reg-title">输入密码</span>
+          <div class="p-relative d-inline-block">
+            <input class="passReg" type="password" placeholder="8-16位大小写字母、数字和特殊符号的组合">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+            <span class="d-none p-absolute d-inline-block tips-icon"></span>
+          </div>
+          <div class="error-tip">
+            <div class="d-none box">
+              <span class="p-relative d-inline-block tip-icon"></span>
+              <span class="text-red tip-text">密码不能少于8位</span>
+            </div>
+          </div>
+        </div>
+        <!-- 确认密码 -->
+        <div class="confrim">
+          <span class="d-inline-block reg-title">确认密码</span>
+          <div class="p-relative d-inline-block">
+            <input type="password" placeholder="请再次输入密码">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <div class="error-tip"></div>
+        </div>
+        <!-- 同意条款并注册 -->
+        <a class="text-white d-block register-btn" href="javascript:;">同意条款并注册</a>
+        <!-- 已阅读注册协议 -->
+        <div class="readed">
+          <input type="checkbox">
+          <span>已阅读<a class="text-black" href="javascript:;">《丝芙兰用户服务协议》</a>和<a class="text-black" href="javascript:;">《丝芙兰隐私政策》</a>
+          </span>
+        </div>
+        <!-- 使用邮箱注册 -->
+        <div class="email-reg">
+          <a class="to-email-reg" href="javascript:;">使用邮箱注册</a>
+          <span class="d-inline-block arrow"></span>
+        </div>
+      </div>
+      <!-- 邮箱注册部分 -->
+      <div class="d-none p-absolute email-reg-box">
+        <!-- 邮箱 -->
+        <div>
+          <span class="d-inline-block reg-title">邮箱</span>
+          <div class="d-inline-block p-relative">
+            <input class="emailReg" placeholder="请输入你的邮箱" type="text">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <div class="error-tip">
+            <div class="d-none box">
+              <span class="p-relative d-inline-block tip-icon"></span>
+              <span class="text-red tip-text">请填写邮箱</span>
+            </div>
+          </div>
+        </div>
+        <!-- 验证码 -->
+        <div>
+          <span class="d-inline-block reg-title">验证码</span>
+          <div class="d-inline-block p-relative">
+            <input type="text">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <div class="error-tip"></div>
+        </div>
+        <!-- 输入密码 -->
+        <div>
+          <span class="d-inline-block reg-title">输入密码</span>
+          <div class="d-inline-block p-relative">
+            <input class="email-passReg" type="password">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+            <span class="d-none p-absolute d-inline-block tips-icon"></span>
+          </div>
+          <div class="error-tip">
+            <div class="d-none box">
+              <span class="p-relative d-inline-block tip-icon"></span>
+              <span class="text-red tip-text">密码不能少于8位</span>
+            </div>
+          </div>
+        </div>
+        <!-- 确认密码 -->
+        <div>
+          <span class="d-inline-block reg-title">确认密码</span>
+          <div class="d-inline-block p-relative">
+            <input type="password">
+            <span class="d-none p-absolute d-inline-block close-btn"></span>
+          </div>
+          <div class="error-tip"></div>
+        </div>
+        <!-- 同意条款并注册 -->
+        <a class="text-white d-block register-btn" href="javascript:;">同意条款并注册</a>
+        <!-- 已阅读注册协议 -->
+        <div class="readed">
+          <input type="checkbox">
+          <span>已阅读<a class="text-black" href="javascript:;">《丝芙兰用户服务协议》</a>和<a class="text-black" href="javascript:;">《丝芙兰隐私政策》</a>
+          </span>
+        </div>
+        <!-- 使用手机注册 -->
+        <div class="phone-reg">
+          <a class="to-phone-reg" href="javascript:;">使用手机注册</a>
+          <span class="d-inline-block arrow"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</html>

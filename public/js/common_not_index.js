@@ -1,0 +1,9 @@
+result.then(function(){
+  $('.nav-left').hover(function(){
+    $this=$(this);
+    $this.children('.nav-menu-list').removeClass('d-none')
+  },function(){
+    $this=$(this);
+    $this.children('.nav-menu-list').addClass('d-none')
+  })
+})
